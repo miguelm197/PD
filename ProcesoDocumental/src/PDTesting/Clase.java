@@ -9,6 +9,15 @@ public class Clase extends ApiaAbstractClass{
 	@Override
 	protected void executeClass() throws BusClassException {
 		
+		Attribute tipos = this.getCurrentEntity().getAttribute("PD_CUERPO_STR");
+
+		PossibleValue pos1 = new PossibleValue("CSS", "CSS");
+		PossibleValue pos2 = new PossibleValue("AG", "AG");
+
+		
+		tipos.addPossibleValues(pos1);
+		tipos.addPossibleValues(pos2);
 		
 	}
 }
+			
